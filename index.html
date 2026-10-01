@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahlia Sihombing | Frontend Developer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-base text-indigo-400 tracking-tight">Dahlia Sihombing</a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+                <a href="#tentang" class="hover:text-indigo-400 transition">Tentang</a>
+                <a href="#keterampilan" class="hover:text-indigo-400 transition">Keterampilan</a>
+                <a href="#pengalaman" class="hover:text-indigo-400 transition">Pengalaman</a>
+                <a href="#proyek" class="hover:text-indigo-400 transition">Proyek</a>
+                <a href="#kontak" class="hover:text-indigo-400 transition">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-20 md:pt-40 md:pb-28 relative overflow-hidden bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center flex flex-col items-center relative z-10">
+            <!-- Foto Profil -->
+            <div class="mb-6 relative">
+                <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full blur-sm opacity-70"></div>
+                <img src="assets/lia.jpeg" alt="Dahlia Sihombing" class="relative w-32 h-32 md:w-36 md:h-36 object-cover rounded-full shadow-lg border-4 border-slate-800">
+            </div>
+
+            <span class="inline-block bg-indigo-950/80 text-indigo-300 border border-indigo-800/60 text-xs font-semibold px-3.5 py-1.5 rounded-full mb-4 shadow-sm">
+                Junior Frontend Developer
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">
+                Halo, saya Dahlia Sihombing
+            </h1>
+            <p class="max-w-xl mx-auto text-sm md:text-base text-slate-300 mb-8 leading-relaxed">
+                Mahasiswa Teknologi Informasi semester 7 yang berfokus pada pengembangan web frontend, antarmuka interaktif, dan siap berkarier sebagai profesional.
+            </p>
+            <div class="flex justify-center gap-3 text-sm">
+                <a href="#proyek" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-xl shadow-md shadow-indigo-600/30 transition">
+                    Lihat Proyek
+                </a>
+                <a href="#kontak" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium px-6 py-3 rounded-xl transition">
+                    Hubungi Saya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang & Pendidikan -->
+    <section id="tentang" class="py-16 bg-slate-950/60 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2">Profil Singkat</h2>
+                <h3 class="text-2xl font-bold text-white mb-4">Tentang Saya</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                    Mahasiswa Teknologi Informasi di Universitas Bina Sarana Informatika semester 7 dengan pencapaian IPK 3.62. Memiliki dasar kuat dalam HTML, CSS, JavaScript, serta React.js.
+                </p>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Terbiasa bekerja secara mandiri maupun dalam tim dengan komunikasi yang baik, didukung pengalaman magang di bidang administrasi dan pengelolaan data.
+                </p>
+            </div>
+            <!-- Kotak Riwayat Pendidikan -->
+            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-sm space-y-4">
+                <h4 class="font-bold text-white text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-graduation-cap text-indigo-400"></i> Riwayat Pendidikan
+                </h4>
+                <div class="space-y-4 text-sm border-l-2 border-indigo-500 pl-4 ml-1">
+                    <div>
+                        <span class="text-xs text-indigo-400 font-semibold">2023 - Sekarang</span>
+                        <h5 class="font-bold text-slate-100">Universitas Bina Sarana Informatika</h5>
+                        <p class="text-xs text-slate-400">S1 Teknologi Informasi (IPK: 3.62)</p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-3">
+                        <span class="text-xs text-slate-500 font-semibold">2019 - 2022</span>
+                        <h5 class="font-bold text-slate-100">SMK N 2 Balige</h5>
+                        <p class="text-xs text-slate-400">Akuntansi dan Lembaga Keuangan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keterampilan -->
+    <section id="keterampilan" class="py-16 bg-slate-900">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2">Keahlian</h2>
+            <h3 class="text-2xl font-bold text-white mb-10">Keterampilan Teknis</h3>
+            
+            <div class="grid md:grid-cols-3 gap-6 text-left">
+                <!-- Card 1 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="w-10 h-10 bg-indigo-600 text-white rounded-xl flex items-center justify-center mb-4 text-sm font-bold shadow-sm">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h4 class="font-bold text-white mb-2 text-sm">Frontend Development</h4>
+                        <p class="text-xs text-slate-400 mb-4">Membangun tampilan web responsif dan interaktif.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 pt-2">
+                        <span class="bg-slate-900 text-indigo-300 border border-indigo-900/50 text-xs px-2.5 py-1 rounded-md font-semibold">HTML5</span>
+                        <span class="bg-slate-900 text-indigo-300 border border-indigo-900/50 text-xs px-2.5 py-1 rounded-md font-semibold">CSS3</span>
+                        <span class="bg-slate-900 text-indigo-300 border border-indigo-900/50 text-xs px-2.5 py-1 rounded-md font-semibold">JavaScript</span>
+                        <span class="bg-slate-900 text-indigo-300 border border-indigo-900/50 text-xs px-2.5 py-1 rounded-md font-semibold">React.js</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-purple-500/50 transition flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="w-10 h-10 bg-purple-600 text-white rounded-xl flex items-center justify-center mb-4 text-sm font-bold shadow-sm">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h4 class="font-bold text-white mb-2 text-sm">Design Tools</h4>
+                        <p class="text-xs text-slate-400 mb-4">Merancang antarmuka dan visual pendukung.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 pt-2">
+                        <span class="bg-slate-900 text-purple-300 border border-purple-900/50 text-xs px-2.5 py-1 rounded-md font-semibold">Figma</span>
+                        <span class="bg-slate-900 text-purple-300 border border-purple-900/50 text-xs px-2.5 py-1 rounded-md font-semibold">Canva</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-4 text-sm font-bold shadow-sm">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <h4 class="font-bold text-white mb-2 text-sm">Responsive Design</h4>
+                        <p class="text-xs text-slate-400 mb-4">Memastikan layout optimal di berbagai ukuran perangkat.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 pt-2">
+                        <span class="bg-slate-900 text-blue-300 border border-blue-900/50 text-xs px-2.5 py-1 rounded-md font-semibold">Mobile-First</span>
+                        <span class="bg-slate-900 text-blue-300 border border-blue-900/50 text-xs px-2.5 py-1 rounded-md font-semibold">Flexbox/Grid</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengalaman Magang -->
+    <section id="pengalaman" class="py-16 bg-slate-950/60 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2 text-center">Karier</h2>
+            <h3 class="text-2xl font-bold text-white mb-10 text-center">Pengalaman Magang</h3>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-sm">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-3">
+                    <div>
+                        <h4 class="font-bold text-white text-base">PT. Pos Indonesia</h4>
+                        <p class="text-indigo-400 text-xs font-medium">Administrasi Data & Pelayanan Pelanggan</p>
+                    </div>
+                    <span class="text-xs bg-indigo-950 text-indigo-300 px-3 py-1 rounded-full font-semibold w-fit mt-2 md:mt-0 border border-indigo-800/60">4 Apr 2022 - 30 Jun 2022</span>
+                </div>
+                <ul class="space-y-2 text-slate-300 text-xs md:text-sm mt-4">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-indigo-400 mt-1"></i> Membantu proses administrasi data dan pelayanan pelanggan secara profesional.
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-indigo-400 mt-1"></i> Mengelola data pengiriman dan dokumen operasional perusahaan.
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-indigo-400 mt-1"></i> Berkoordinasi dengan tim dalam mendukung operasional harian.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek Portofolio -->
+    <section id="proyek" class="py-16 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2 text-center">Portofolio</h2>
+            <h3 class="text-2xl font-bold text-white mb-10 text-center">Proyek Unggulan</h3>
+
+            <div class="bg-slate-950 rounded-2xl border border-slate-800 p-6 md:p-8 shadow-sm">
+                <div class="flex flex-wrap justify-between items-start gap-2 mb-3">
+                    <h4 class="text-lg md:text-xl font-bold text-white">Website Gudang - PT. Sigma Indonesia Manufacturing</h4>
+                    <span class="text-xs bg-emerald-950 text-emerald-400 border border-emerald-800/60 px-3 py-1 rounded-full font-semibold">Full Stack | 2026</span>
+                </div>
+                <p class="text-slate-300 text-xs md:text-sm mb-6 leading-relaxed">
+                    Sistem pengelolaan inventaris dan gudang yang dirancang untuk memantau aktivitas stok secara real-time dan akurat.
+                </p>
+
+                <!-- Fitur Unggulan (Grid 5 Item) -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3.5 mb-8">
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800/80">
+                        <h5 class="font-bold text-slate-200 text-xs mb-1 flex items-center gap-1.5">
+                            <span>📊</span> Dashboard Interaktif
+                        </h5>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Ringkasan data statistik stok barang dan aktivitas gudang secara real-time.</p>
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800/80">
+                        <h5 class="font-bold text-slate-200 text-xs mb-1 flex items-center gap-1.5">
+                            <span>📦</span> Manajemen Stok Barang
+                        </h5>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Pencatatan data barang masuk, barang keluar, serta pengecekan sisa stok secara presisi.</p>
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800/80">
+                        <h5 class="font-bold text-slate-200 text-xs mb-1 flex items-center gap-1.5">
+                            <span>📑</span> Laporan & Rekapitulasi
+                        </h5>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Fitur cetak laporan inventaris harian/bulanan untuk kebutuhan audit dan manajemen.</p>
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800/80">
+                        <h5 class="font-bold text-slate-200 text-xs mb-1 flex items-center gap-1.5">
+                            <span>🔐</span> Sistem Autentikasi Aman
+                        </h5>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Hak akses pengguna berbasis role (Admin & Petugas Gudang).</p>
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800/80 md:col-span-2 lg:col-span-1">
+                        <h5 class="font-bold text-slate-200 text-xs mb-1 flex items-center gap-1.5">
+                            <span>🛡️</span> Keamanan Arsitektur CI4
+                        </h5>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Menerapkan pemisahan folder public untuk melindungi file inti sistem dari akses publik.</p>
+                    </div>
+                </div>
+
+                <a href="https://github.com/DahliaSihombing/Website-Gudang-PT-Sigma-Indonesia-Manufacturing" target="_blank" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl text-xs font-medium transition shadow-sm">
+                    <i class="fa-brands fa-github"></i> Lihat Kode di GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Footer -->
+    <section id="kontak" class="py-16 bg-slate-950 text-white border-t border-slate-800">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-3">Mari Terhubung</h2>
+            <p class="text-slate-400 text-xs md:text-sm mb-8">Terbuka untuk peluang kerja magang, atau kolaborasi proyek.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-xs md:text-sm mb-10">
+                <a href="mailto:sihombingdahlia703@gmail.com" class="bg-slate-900 hover:bg-slate-800 px-5 py-3 rounded-xl transition text-slate-300 border border-slate-800">
+                    <i class="fa-solid fa-envelope text-indigo-400 mr-2"></i> sihombingdahlia703@gmail.com
+                </a>
+                <a href="tel:083870105787" class="bg-slate-900 hover:bg-slate-800 px-5 py-3 rounded-xl transition text-slate-300 border border-slate-800">
+                    <i class="fa-solid fa-phone text-indigo-400 mr-2"></i> 0838-7010-5787
+                </a>
+            </div>
+
+            <p class="text-[11px] text-slate-500 border-t border-slate-900 pt-6">
+                &copy; 2026 Dahlia Sihombing. All rights reserved.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
