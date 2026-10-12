@@ -1,69 +1,107 @@
-# CodeIgniter 4 Application Starter
+# 📦 Website Inventory Gudang
+### PT Sigma Indonesia Manufacturing
 
-## What is CodeIgniter?
+[![CodeIgniter 4](https://img.shields.io/badge/CodeIgniter-4.x-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)](https://codeigniter.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+[![Laragon](https://img.shields.io/badge/Laragon-Local%20Server-00A4E4?style=for-the-badge&logo=laragon&logoColor=white)](https://laragon.org)
+[![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com)
+[![VS Code](https://img.shields.io/badge/VS%20Code-Editor-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com)
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+*Sistem Informasi Manajemen Inventaris Gudang yang cepat, aman, dan modern untuk mendukung operasional logistik perusahaan.*
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+</div>
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+---
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+## 📋 Tentang Aplikasi
+**Website Inventory Gudang PT Sigma Indonesia Manufacturing** adalah platform berbasis web yang dikembangkan untuk mengoptimalkan proses pencatatan stok barang, pengelolaan barang masuk & keluar, serta penyusunan laporan inventaris secara akurat dan *real-time*.
 
-## Installation & updates
+---
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+## ✨ Fitur Utama
+* 📊 **Dashboard Interaktif**: Ringkasan data statistik stok barang dan aktivitas gudang secara *real-time*.
+* 📦 **Manajemen Stok Barang**: Pencatatan data barang masuk, barang keluar, serta pengecekan sisa stok secara presisi.
+* 📑 **Laporan & Rekapitulasi**: Fitur cetak laporan inventaris harian/bulanan untuk kebutuhan audit dan manajemen.
+* 🔐 **Sistem Autentikasi Aman**: Hak akses pengguna berbasis *role* (Admin & Petugas Gudang).
+* 🛡️ **Keamanan Arsitektur CI4**: Menerapkan pemisahan folder *public* untuk melindungi file inti sistem dari akses publik yang tidak sah.
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+---
 
-## Setup
+## 🛠️ Tech Stack & Tools yang Digunakan
+* **Framework Backend**: [CodeIgniter 4](https://codeigniter.com) (PHP Full-Stack Framework)
+* **Local Development Server**: [Laragon](https://laragon.org) (Fast & lightweight development environment di Windows)
+* **Database Management**: [MySQL](https://www.mysql.com) via **phpMyAdmin**
+* **Code Editor**: [Visual Studio Code (VS Code)](https://code.visualstudio.com)
+* **Dependency Manager**: [Composer](https://getcomposer.org)
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+---
 
-## Important Change with index.php
+## 🚀 Langkah-Langkah Instalasi (Installation Guide)
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+Ikuti tahapan di bawah ini dengan teliti untuk menjalankan project ini di komputer lokal Anda:
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+### 1. Persiapan Awal
+Pastikan komputer Anda sudah terinstal:
+* **Laragon** (sudah termasuk PHP versi 8.2+ dan MySQL).
+* **Composer** (untuk mengelola *dependencies* PHP).
+* **Visual Studio Code**.
 
-**Please** read the user guide for a better explanation of how CI4 works!
+### 2. Clone Repository
+Buka terminal (Git Bash atau Command Prompt), lalu arahkan direktori ke dalam folder *root* web server Laragon Anda (biasanya di `C:\laragon\www\`):
+```bash
+git clone [https://github.com/Dahliasihombing/Website-Inventory-Gudang-PT-Sigma-Indonesia-Manufacturing.git](https://github.com/Dahliasihombing/Website-Inventory-Gudang-PT-Sigma-Indonesia-Manufacturing.git)
+```
 
-## Repository Management
+Setelah proses clone selesai, masuk ke dalam folder project:
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+```bash
+cd Website-Inventory-Gudang-PT-Sigma-Indonesia-Manufacturing
+```
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+### 3. Instal Vendor Dependencies via Composer
+Jalankan perintah berikut di terminal untuk mengunduh seluruh pustaka (libraries) yang dibutuhkan oleh CodeIgniter 4:
+```bash
+composer install
+```
 
-## Server Requirements
+### 4. Konfigurasi Environment (.env)
+- Cari file bernama env di dalam folder utama project Anda.
+- Salin (copy) file tersebut dan ubah namanya menjadi .env.
+- Buka file .env menggunakan VS Code, lalu sesuaikan konfigurasi koneksi database Anda:
+```bash
+CI_ENVIRONMENT = development
 
-PHP version 8.2 or higher is required, with the following extensions installed:
+database.default.hostname = localhost
+database.default.database = pt_sigma_inventory
+database.default.username = root
+database.default.password = 
+database.default.DBDriver = MySQL
+```
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+### 5. Konfigurasi Database (phpMyAdmin)
+- Buka aplikasi database manager Anda, jalankan Laragon lalu klik tombol Start All.
+- Buka phpMyAdmin (bisa melalui shortcut Laragon atau akses http://localhost/phpmyadmin).
+- Buat database baru dengan nama: pt_sigma_inventory (sesuaikan dengan nama database di file .env).
+- Jika tersedia file struktur database (.sql), lakukan import file tersebut ke dalam database pt_sigma_inventory.
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - The end of life date for PHP 8.1 was December 31, 2025.
-> - If you are still using below PHP 8.2, you should upgrade immediately.
-> - The end of life date for PHP 8.2 will be December 31, 2026.
+### 6. Menjalankan Aplikasi
+Jalankan perintah ini di terminal VS Code:
+```bash
+php spark serve
+```
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+## 📂 Struktur Direktori Project
+```bash
+Website-Inventory-Gudang-PT-Sigma-Manufacturing/
+├── app/              # Berisi Controllers, Models, Views, dan logika aplikasi
+├── public/           # Folder publik (Aset CSS/JS, dan file utama index.php)[cite: 5]
+├── writable/         # Tempat penyimpanan logs, session, dan cache sistem
+├── vendor/           # Pustaka sistem inti dari Composer
+├── env               # File template konfigurasi environment
+└── README.md         # Dokumentasi project
+```
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+## 👥 Pengembang & Kontribusi
+Project ini dikembangkan dengan penuh dedikasi oleh:
+- Dahlia Sihombing — Lead Developer & Information Technology Student
+
